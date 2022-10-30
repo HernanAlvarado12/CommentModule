@@ -1,0 +1,107 @@
+:root {
+    --gray: #7c7c7c;
+    --fnt-lrg: 1.6rem;
+    --fnt-mdm: 1.3rem;
+    --fnt-smll: 1.2rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main__cntnr {
+    height: 100vh;
+    place-content: center;
+    position: relative;
+    background-color: aquamarine;
+}
+
+.elmt--grd, .cntnr--grd {
+    display: grid;
+}
+
+.main__sctn {
+    width: 90%;
+    padding: 2rem;
+    position: relative;
+    border-radius: 0.8rem;
+    background-color: white;
+}
+
+.elmt--mrgn-auto, .cntnr--mrgn-auto {
+    margin: 0 auto;
+}
+
+.artcl__img {
+    width: 3.4rem;
+    height: 3.4rem;
+    align-self: flex-start;
+}
+
+.elmt--flx, .cntnr--flx {
+    display: flex;
+    align-items: center;
+}
+
+.elmt--flx--drctn, .cntnr--flx--drctn {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.elmt--flx--wrp, .cntnr--flx--wrp {
+    flex-wrap: wrap;
+}
+
+.clmn--gap {
+    column-gap: 2rem;
+}
+
+.clmn--gap-two {
+    column-gap: 0.6rem;
+}
+
+.fnt--bld {
+    font-weight: bold;
+}
+
+.fnt--gray {
+    color: gray;
+}
+
+.fnt--mdm {
+    font-size: var(--fnt-mdm);
+}
+
+.sctn__cntnt {
+    margin: 1.5rem 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.sctn__artcl {
+    position: relative;
+}
+
+.sctn__artcl::before {
+    content: '';
+    width: 1.5px;
+    height: calc(100% - 35px);
+    position: absolute;
+    transform: translate(1.6rem, 3.5rem);
+    background-color: #c5c5c5;
+}
+
+.sctn__artcl > .sctn__artcl {
+    margin: 2rem 0 0 5rem;
+}
+
+.sctn__artcl-frst {
+    margin-bottom: 5rem;
+}
